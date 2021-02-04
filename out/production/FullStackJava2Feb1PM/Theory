@@ -1,0 +1,5 @@
+1. public - Public is accessible through out the project
+      2. private - private is accessible only within class
+      3. protected - protected is accessible only within a package,
+                     but accessible in another package through inheritance
+      4. default - it is accessible only within a package. and it is more restrictive than protected.

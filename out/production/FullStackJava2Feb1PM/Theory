@@ -3,3 +3,14 @@
       3. protected - protected is accessible only within a package,
                      but accessible in another package through inheritance
       4. default - it is accessible only within a package. and it is more restrictive than protected.
+
+
+Polymorphism -
+            It is ability to take many forms.
+            ex-
+            1 . Method overloading - if same method name have multiple time is same class it is called method overloading.
+                                     It increases program readability.
+            rule for method overloading - 1. same name but different number of parameters
+                                          2. same number of parameter but different datatype.
+
+            2. Method Overriding - If child class have same method name in that parent class then is called method overriding.

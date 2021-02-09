@@ -12,9 +12,12 @@ public class Polymorphism {
        return i+j;
     }
 
-//    public float add(float i,int j,int k){
-//        return i+j;
-//    }
+
+    public float add(float i,int j,int k){
+        return i+j;
+    }
+
+
 
 }
 

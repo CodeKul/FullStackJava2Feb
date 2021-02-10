@@ -14,3 +14,9 @@ Polymorphism -
                                           2. same number of parameter but different datatype.
 
             2. Method Overriding - If child class have same method name in that parent class then is called method overriding.
+
+abstraction ->
+1) interface ->
+ *if interface have 1 abstract method this called functional interface;
+ *if interface have multiple methods then it is called normal interface
+ *if interface have no method then it is called marker interface.

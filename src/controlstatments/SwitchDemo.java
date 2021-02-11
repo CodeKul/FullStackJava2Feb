@@ -17,6 +17,8 @@ public class SwitchDemo {
 
             default:
                 System.out.println("No found");
+
+                //test push
         }
     }
 }

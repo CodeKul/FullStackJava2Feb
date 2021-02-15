@@ -4,6 +4,9 @@ public class ExceptionHandlingDemo {
 
     public static void main(String[] args) {
 
+        StackOverFlow.recursive(1);
+
+
         int i = 10;
         String s = null;
 

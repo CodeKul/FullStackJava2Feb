@@ -20,3 +20,30 @@ abstraction ->
  *if interface have 1 abstract method this called functional interface;
  *if interface have multiple methods then it is called normal interface
  *if interface have no method then it is called marker interface.
+
+
+Throwable ->
+1. Exception ->
+             1. IOException
+             2. SQLException
+             3. FileNotFoundException
+             4. RunTimeException ->
+                                   - ArithmeticException
+                                   - NullPointerException
+                                   - NumberFormatException
+                                   - IndexOutOfBoundException -
+                                                              ArrayIndexOutOfBoundException
+                                                              StringIndexOutOfBoundException
+
+
+2. Error ->
+        1. StackOverFlowError
+        2. OutOfMemoryError
+        3. AssertionError
+
+
+ **There are two types Exceptions
+
+        1 .checked Exception - they are come at compile time and compiler will force you to handle these exception.
+        2. unchecked Exception - all runtime exception are unchecked exception.
+

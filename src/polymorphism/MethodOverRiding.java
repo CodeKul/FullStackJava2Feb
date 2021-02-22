@@ -3,7 +3,6 @@ package polymorphism;
 public class MethodOverRiding {
     public static void main(String[] args) {
 
-
         SBI sbi = new SBI();
         sbi.interest(11);
         sbi.minimumBalance();

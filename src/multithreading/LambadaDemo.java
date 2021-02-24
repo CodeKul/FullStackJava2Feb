@@ -1,9 +1,9 @@
 package multithreading;
 
-public class lambadaDemo {
+public class LambadaDemo {
 
     public static void main(String[] args) {
-        LambadaInterface s =(str1,str2)-> str1+str2;
+        LambadaInterface s =(str1,str2) -> str1+str2;
         System.out.println(s.concat("Pune","Mumbai"));
 
     }
@@ -12,5 +12,5 @@ public class lambadaDemo {
 @FunctionalInterface
 interface LambadaInterface{
 
-    public String concat(String a, String b);
+     String concat(String a, String b);
 }

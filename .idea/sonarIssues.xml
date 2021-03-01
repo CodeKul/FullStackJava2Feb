@@ -8,6 +8,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/Theory">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/collection/ArrayListDemo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/collection/CollectionDemo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/multithreading/LambadaDemo.java">
           <value>
             <set />
@@ -24,6 +39,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/multithreading/RunnableDemo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/multithreading/Sync.java">
           <value>
             <set />
           </value>

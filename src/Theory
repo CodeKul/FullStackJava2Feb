@@ -47,3 +47,16 @@ Throwable ->
         1 .checked Exception - they are come at compile time and compiler will force you to handle these exception.
         2. unchecked Exception - all runtime exception are unchecked exception.
 
+
+                                     Iterable(I)
+
+                                     Collection(I)
+
+  List(I)                               Queue(I)                             Set(I)
+1)Arraylist (C)                         1)PriorityQueue(C)                1)HashSet(C)
+2)LinkedList (C)                        2)Deque(I)                        2)LinkedHashSet
+                                                                          3)TreeSet(C)
+                                                                          4)SortedSet(I)
+3)Vector (C)
+
+

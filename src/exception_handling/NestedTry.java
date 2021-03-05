@@ -20,8 +20,8 @@ public class NestedTry {
         } catch (ArithmeticException e) {
             System.out.println("Arith=>" + e);
         } catch (NullPointerException e) {
-            e.printStackTrace();
-//            System.out.println("Nullpointer =>" + e);
+//            e.printStackTrace();
+            System.out.println("Nullpointer =>" + e);
         } catch (Exception e) {
             System.out.println("parent Exception=>"+e);
         } finally {

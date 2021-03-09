@@ -31,7 +31,7 @@ public class EmployeeDemo implements Comparable<EmployeeDemo> {
         Collections.sort(list);
 
         list.forEach(s -> {
-            System.out.println(s.id + " " + s.name);
+            System.out.println(s.id + " " + s.name+" "+ s.address);
         });
 
 
@@ -39,12 +39,18 @@ public class EmployeeDemo implements Comparable<EmployeeDemo> {
 
     @Override
     public int compareTo(EmployeeDemo employeeDemo) {
-        if (this.id == employeeDemo.id) {
-            return 0;
-        } else if (this.id > employeeDemo.id) {
-            return 1;
-        } else {
-            return -1;
-        }
+        return this.name.compareTo(employeeDemo.name);
     }
+
+
+//    @Override
+//    public int compareTo(EmployeeDemo employeeDemo) {
+//        if (this.id == employeeDemo.id) {
+//            return 0;
+//        } else if (this.id > employeeDemo.id) {
+//            return 1;
+//        } else {
+//            return -1;
+//        }
+//    }
 }

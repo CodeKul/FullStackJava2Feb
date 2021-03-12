@@ -1,22 +1,36 @@
 package jdbc;
 
 import java.sql.*;
+import java.util.Scanner;
 
 public class JdbcDemo {
 
     public static void main(String[] args) {
 
         try {
+            int id;
+            String name;
+            String address;
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter the id, Name , Address ");
+            id = scanner.nextInt();
+            name = scanner.next();
+            address = scanner.next();
+            String sql = "insert into employee (id,name,address) values (?,?,?)";
+
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java2feb?characterEncoding=latin1", "root", "password");
-            Statement statement = connection.createStatement();
+            PreparedStatement statement = connection.prepareStatement(sql);
 
-            String sql = "insert into employee(id,name,address) values(2,'sachin','nashik')";
+            statement.setInt(1, id);
+            statement.setString(2, name);
+            statement.setString(3, address);
+
+            int i = statement.executeUpdate();
 
 
-            int  i = statement.executeUpdate(sql);
-
-            System.out.println(i+"row inserted");
+            System.out.println(i + "row inserted");
 //
 //            while (rs.next()) {
 //                System.out.println(rs.getInt(1));

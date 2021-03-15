@@ -13,19 +13,20 @@ public class JdbcDemo {
             String address;
 
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter the id, Name , Address ");
+            System.out.println("Enter the id, Name  ");
             id = scanner.nextInt();
             name = scanner.next();
-            address = scanner.next();
-            String sql = "insert into employee (id,name,address) values (?,?,?)";
+//            address = scanner.next();
+//            String sql = "insert into employee (id,name,address) values (?,?,?)";
+            String update = "update employee set name = ? where id = ?";
 
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java2feb?characterEncoding=latin1", "root", "password");
-            PreparedStatement statement = connection.prepareStatement(sql);
+            PreparedStatement statement = connection.prepareStatement(update);
 
-            statement.setInt(1, id);
-            statement.setString(2, name);
-            statement.setString(3, address);
+            statement.setString(1, name);
+            statement.setInt(2, id);
+//            statement.setString(3, address);
 
             int i = statement.executeUpdate();
 
